@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(0, 0%, 81%);
+    margin: 60px 25px;
+}
+.Daniel {
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 81%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 150px 0px;
+    background-size: 140px;
+    
+}
+.grad1 {
+    color: hsla(0, 0%, 81%, 50%);
+    font-size: 15px;
+    
+    }
+#quote1 {
+    color: hsla(0, 0%, 81%, 70%);
+}
+.Jonathan {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 81%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.grad2 {
+    color: hsla(0, 0%, 81%, 50%);
+    font-size: 15px;
+    }
+#quote2 {
+    color: hsla(0, 0%, 81%, 70%);
+}
+.Jeanette {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.grad3 {
+    color: hsla(217, 19%, 35%, 50%);
+    font-size: 15px;
+    }
+#quote3 {
+    color: hsla(217, 19%, 35%, 70%);
+}
+.Patrick {
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 81%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.grad4 {
+    color: hsla(0, 0%, 81%, 50%);
+    font-size: 15px;
+    }
+#quote4 {
+    color: hsla(0, 0%, 81%, 70%);
+}
+.Kira {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.grad5 {
+    color: hsla(217, 19%, 35%, 50%);
+    font-size: 15px;
+    }
+#quote5 {
+    color: hsla(217, 19%, 35%, 70%);
+}
+.maintext {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px 20px 5px 20px;
+    line-height: 1.2;
+}
+
+.img1 {
+    border-radius: 50%;
+    border: 3.5px solid hsla(263, 55%, 52%, 80%);
+    height: 50px;
+}
+.img2 {
+    border-radius: 50%; 
+    height: 50px;
+}
+.img3 {
+    border-radius: 50%;
+    border: 3.5px solid hsla(0, 0%, 100%, 30%);
+    height: 50px;
+}
+.quote {
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px 20px 35px 20px;
+    line-height: 1.2;
+}
+.header {
+    display: flex;
+    margin: 10px;
+    padding: 30px 20px 5px 20px;
+}
+.profile {
+    margin: 10px;
+    text-align: left;
+}
+.name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (min-width: 900px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 20px;
+        margin: 120px;
+
+    }
+    .Daniel {
+    order: 1;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-position: 400px 10px;
+
+    }
+    .Jonathan {
+        order: 2;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .Kira {
+        order: 3;
+        grid-row: 1/3;
+    }
+    .Jeanette {
+        order: 4;
+        grid-column: 1/2;
+    }
+    .Patrick {
+        order: 5;
+        grid-column: 2/4;
+    }
+    .profile {
+        margin: 5px 0px 10px 20px;
+    }
+}
